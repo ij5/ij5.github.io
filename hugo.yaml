@@ -1,0 +1,4 @@
+baseURL: https://blog.hee.blue/
+languageCode: ko-kr
+title: Blog
+theme: ["PaperMod"]
