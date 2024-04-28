@@ -13,6 +13,11 @@ outputs:
     - RSS
     - JSON
 
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
+
 module:
   mounts:
     - excludeFiles: posts/templates
