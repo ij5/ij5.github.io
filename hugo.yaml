@@ -2,3 +2,46 @@ baseURL: https://blog.hee.blue/
 languageCode: ko-kr
 title: Blog
 theme: ["PaperMod"]
+
+mainsections: ["posts"]
+
+enableEmoji: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+module:
+  mounts:
+    - excludeFiles: posts/templates
+      source: content
+      target: content
+
+params:
+  homeInfoParams:
+    Title: "Hello, World!"
+    Content: "My Blog"
+  socialIcons:
+    - name: github
+      url: https://github.com/ij5
+  author: "이재희"
+  hideFooter: true
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowPageNums: true
+  ShowToc: true
+  ShowBreadCrumbs: false
+
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Search
+      url: search/
+      weight: 10
+    - name: Tags
+      url: tags/
+      weight: 10
