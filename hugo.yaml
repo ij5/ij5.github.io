@@ -25,6 +25,8 @@ module:
       target: content
 
 params:
+  assets:
+    disableFingerprinting: true
   homeInfoParams:
     Title: "Hello, World!"
     Content: "My Blog"
