@@ -28,10 +28,9 @@ params:
   assets:
     disableFingerprinting: true
   homeInfoParams:
-    Title: "아카식 블로그"
+    Title: "그냥 블로그"
     Content: |
-      > 너때문에흥이다깨져버렸으니까책임져 \
-      > -***이재희***
+      > 너때문에흥이다깨져버렸으니까책임져
 
   socialIcons:
     - name: github
