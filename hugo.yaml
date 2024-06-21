@@ -18,11 +18,11 @@ markup:
     renderer:
       hardWraps: true
 
-module:
-  mounts:
-    - excludeFiles: posts/templates
-      source: content
-      target: content
+# module:
+#   mounts:
+#     - excludeFiles: posts/templates
+#       source: content
+#       target: content
 
 params:
   assets:
