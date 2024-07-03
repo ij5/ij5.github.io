@@ -61,6 +61,21 @@ gsap.set("#background", {
 
 먼저 gsap.set 메소드를 통해 초기값을 설정해줘야 한다.
 
+**마지막으로 `gsap.to` 부분에 `immediateRender: false` 옵션도 추가가 필요하다.**
+
+````typescript
+gsap.to("#bgsap.to("#background", {
+  backgroundImage: gradient,
+  immediateRender: false,
+  scrollTrigger: {
+    trigger: id,
+    start: "top bottom",
+    end: 'top top',
+    scrub: true
+  },
+});
+````
+
 # 오늘 배운 것
 
 설명서(공식 문서)를 잘 읽자.
